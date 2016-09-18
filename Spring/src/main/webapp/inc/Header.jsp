@@ -18,9 +18,46 @@
 	<script src="./resources/js/bootstrap/bootstrap.min.js"></script>
 	<script src="./resources/js/bootstrap/bootstrap.js"></script>
 	<script src="./resources/js/bootstrap/npm.js"></script>
+	
+	<!-- jQeury -->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	
+	<!-- slider js -->
+	<script src="./resources/js/jquery/slider.full.js"></script>
+
+	
 <title>ShoppingMall</title>
 </head>
 <body>
+	
+	<div class="content" style="width:1000px;height:200px;overflow:hidden; margin:50px auto;">
+		<div id="slider">
+			<a href="#"><img src="./resources/img/banner1.jpg"/></a>
+			<a href="#"><img src="./resources/img/banner2.jpg"/></a>
+			<a href="#"><img src="./resources/img/banner3.jpg"/></a>
+		</div>
+	</div>
+
+	<script>
+		$('#slider').vmcSlider(
+				{
+					width : 1000,
+					height : 200,
+					gridCol : 10,
+					gridRow : 5,
+					gridVertical : 20,
+					gridHorizontal : 10,
+					autoPlay : true,
+					ascending : true,
+					effects : [ 'fadeLeft', 'fadeLeft', 'fadeLeft'],
+					ie6Tidy : false,
+					random : true,
+					duration : 2000,
+					speed : 900
+				});
+	</script>
+
+
 	<div class="menu align-center">
 			<ul>
 				<li>
