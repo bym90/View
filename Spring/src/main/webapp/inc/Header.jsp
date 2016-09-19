@@ -30,7 +30,7 @@
 </head>
 <body>
 	
-	<div class="content" style="width:1000px;height:200px;overflow:hidden; margin:50px auto;">
+	<div class="content">
 		<div id="slider">
 			<a href="#"><img src="./resources/img/banner1.jpg"/></a>
 			<a href="#"><img src="./resources/img/banner2.jpg"/></a>
@@ -39,7 +39,7 @@
 	</div>
 
 	<script>
-		$('#slider').vmcSlider(
+		$("#slider").vmcSlider(
 				{
 					width : 1000,
 					height : 200,
@@ -61,61 +61,61 @@
 	<div class="menu align-center">
 			<ul>
 				<li>
-					<a href='#'>Home</a>
+					<a href="#">Home</a>
 				</li>
 				<li>
-					<a href='#'>Login</a>
+					<a href="#">Login</a>
 				</li>
 				<li>
-					<a href='#'>Join Us</a>
+					<a href="#">Join Us</a>
 				</li>
-				<li class='active sub'>
-					<a href='#'>Clothes</a>
+				<li class="active sub">
+					<a href="#">Clothes</a>
 					<ul>
-						<li class='sub'>
-							<a href='#'>Top</a>
+						<li class="sub">
+							<a href="#">Top</a>
 							<ul>
 								<li>
-									<a href='#'>Outer</a>
+									<a href="#">Outer</a>
 								</li>
 								<li>
-									<a href='#'>Shirts</a>
+									<a href="#">Shirts</a>
 								</li>
 								<li class='last'>
-									<a href='#'>T-Shirts</a>
+									<a href="#">T-Shirts</a>
 								</li>
 							</ul>
 						</li>
-						<li class='sub'>
-							<a href='#'>Bottom</a>
+						<li class="sub">
+							<a href="#">Bottom</a>
 							<ul>
 								<li>
-									<a href='#'>Jean</a>
+									<a href="#">Jean</a>
 								</li>
 								<li>
-									<a href='#'>Slacks</a>
+									<a href="#">Slacks</a>
 								</li>
-								<li class='last'>
-									<a href='#'>Shorts</a>
+								<li class="last">
+									<a href="#">Shorts</a>
 								</li>
 							</ul>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href='#'>Order</a>
+					<a href="#">Order</a>
 				</li>
 				<li>
-					<a href='#'>Cart</a>
+					<a href="#">Cart</a>
 				</li>
 				<li>
-					<a href='#'>My Page</a>
+					<a href="#">My Page</a>
 				</li>
 				<li>
-					<a href='#'>고객센터</a>
+					<a href="#">고객센터</a>
 				</li>
-				<li class='last'>
-					<a href='#'>Administrator</a>
+				<li class="last">
+					<a href="#">Administrator</a>
 				</li>
 			</ul>
 		</div>

@@ -37,7 +37,7 @@
 	        </div>
 	    </section>
 
-    </div>
+    
     <!-- /.container -->
 </body>
 </html>
