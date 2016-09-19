@@ -1,8 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<beans 
+	xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx 
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd">
 	
-	<!-- Root Context: defines shared resources visible to all other web components -->
-		
+	
+	<!-- 	보조적인 환경 설정이 필요하면 설정할 예정이다. -->
+	<!-- 	컨넥션 풀을 잡는다. -->
+	<!-- 스프링이 관장하지 않은 일반 클래스에서도 어노테이션 사용이
+		  가능하도록 선언한다.
+	 -->
+	<context:annotation-config />
+	
+		<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:orcl" />
+		<property name="username" value="scott" />
+		<property name="password" value="tiger" />
+	</bean>   
+	
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<!--	myBatis의 환경 설정 파일을 등록한다.	-->
+		<property name="configLocation" >
+			<!-- 	파일을 만들 위치와 파일 이름은 사용자 결정에 따른다. -->
+			<value>classpath:/com/spring/myBatis/myBatis-config.xml</value>
+		</property>
+		<property name="dataSource" ref="dataSource" />
+	</bean> 
+	
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg index="0" ref="sqlSessionFactory" />
+	</bean>		
+	
+	
+	<!-- DAO 등록 -->
+	<bean id = "Image" class = "com.spring.dao.ShppingDAO">
+		<property name ="sqlSessionTemplate" ref = "sqlSession"/> 
+	</bean>
+	
+	<!-- service 등록 -->
+	<bean id = "ImageService" class = "com.spring.service.ShoppingService"/>
+	
 </beans>
