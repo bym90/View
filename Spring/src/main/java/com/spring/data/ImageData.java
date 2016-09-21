@@ -7,6 +7,7 @@ public class ImageData {
 	private String savename;
 	private String path;
 	private MultipartFile[] upimage;
+	private String cate;
 	
 	
 	

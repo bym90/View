@@ -1,6 +1,7 @@
 package com.spring.www.controller;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -73,6 +74,9 @@ public class ShoppingmallController {
 	
 		
 		ModelAndView mv = new ModelAndView();
+		HashMap map = new HashMap();
+		map.put("cate", 1);
+		mv.addObject("DATA",map);
 		mv.setViewName("Shopping/ShoppingOuterList");
 		return mv;
 	}
