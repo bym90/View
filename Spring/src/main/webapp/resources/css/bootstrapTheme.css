@@ -240,7 +240,8 @@ a:focus {
   border-radius: 500px;
 }
 .row {
-  margin-left: -20px;
+   margin-right: auto;
+  margin-left: auto;
   *zoom: 1;
 }
 .row:before,

@@ -112,7 +112,8 @@ h4 {
 			<td>
 				<hr>
 				<h1>상세보기</h1>
-				<img src = "../resources/img/main1.jpg">
+				<img src = "../resources/img
+				/main1.jpg">
 			</td>
 		</tr>
 	</table>
