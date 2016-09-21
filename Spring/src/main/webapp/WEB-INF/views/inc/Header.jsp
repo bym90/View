@@ -6,33 +6,33 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<!-- Menu CSS -->
-	<link rel="stylesheet" href="./resources/css/main.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css">
     <link href="${pageContext.request.contextPath}/resources/css/owl.carousel.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/resources/css/owl.theme.css" rel="stylesheet">
  	<!-- Bootstrap Core CSS -->
  	<link href="${pageContext.request.contextPath}/resources/css/bootstrapTheme.css" rel="stylesheet">
-	<link rel="stylesheet" href="./resources/css/bootstrap/bootstrap-theme.css">
-	<link rel="stylesheet" href="./resources/css/bootstrap/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="./resources/css/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./resources/css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap/bootstrap-theme.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap/bootstrap.min.css">
 
 	<!-- Bootstrap Core JavaScript -->
-	<script src="./resources/js/bootstrap/bootstrap.min.js"></script>
-	<script src="./resources/js/bootstrap/bootstrap.js"></script>
-	<script src="./resources/js/bootstrap/npm.js"></script>
+	<script src="../resources/js/bootstrap/bootstrap.min.js"></script>
+	<script src="../resources/js/bootstrap/bootstrap.js"></script>
+	<script src="../resources/js/bootstrap/npm.js"></script>
 	
 	<!-- jQeury -->
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	
 	<!-- slider js -->
-	<script src="./resources/js/jquery/slider.full.js"></script>
-	<script src="./resources/js/jquery-1.9.1.min.js"></script> 
-    <script src="./resources/js/owl.carousel.js"></script>
-    <script src="./resources/js/bootstrap-collapse.js"></script>
-    <script src="./resources/js/bootstrap-transition.js"></script>
-    <script src="./resources/js/bootstrap-tab.js"></script>
-    <script src="./resources/js/google-code-prettify/prettify.js"></script>
-	<script src="./resources/js/application.js"></script>
+	<script src="../resources/js/jquery/slider.full.js"></script>
+	 <script src="../resources/js/jquery-1.9.1.min.js"></script> 
+    <script src="../resources/js/owl.carousel.js"></script>
+    <script src="../resources/js/bootstrap-collapse.js"></script>
+    <script src="../resources/js/bootstrap-transition.js"></script>
+    <script src="../resources/js/bootstrap-tab.js"></script>
+    <script src="../resources/js/google-code-prettify/prettify.js"></script>
+	<script src="../resources/js/application.js"></script>
 	
 <title>ShoppingMall</title>
 </head>
@@ -109,10 +109,9 @@ div.desc {
     </style>
 <body>
 	
-	
-	<div class="col-md-12">
-			<a href="#"><img src="./resources/img/banner2.jpg"/></a>
-	</div>	
+	<div align="center">	
+			<a href="#"><img src="../resources/img/banner1.jpg"/></a>	
+	</div>
 
 	<script>
 		$('#slider').vmcSlider(
@@ -157,7 +156,8 @@ div.desc {
     <script>
     $(document).ready(function() {
       $("#owl-demo1").owlCarousel({
-   	  navigation : true,
+
+      navigation : true,
       slideSpeed : 300,
       paginationSpeed : 400,
       singleItem : true
@@ -170,12 +170,6 @@ div.desc {
 			<ul>
 				<li>
 					<a href='#'>Home</a>
-				</li>
-				<li>
-					<a href='#'>Login</a>
-				</li>
-				<li>
-					<a href='#'>Join Us</a>
 				</li>
 				<li class='active sub'>
 					<a href='#'>Clothes</a>
@@ -226,4 +220,4 @@ div.desc {
 					<a href='#'>Administrator</a>
 				</li>
 			</ul>
-		</div>
+		</div><br><br><br>
