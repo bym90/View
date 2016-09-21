@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.spring.dao.ShppingDAO;
+import com.spring.dao.ShoppingDAO;
 import com.spring.data.ImageData;
 import com.spring.util.FileUtil;
 import com.spring.util.StringUtil;
@@ -17,7 +17,7 @@ import com.spring.util.StringUtil;
 public class ShoppingService {
 
 	@Autowired
-	private ShppingDAO sDAO; 
+	private ShoppingDAO sDAO; 
 	
 public ArrayList getImage(){
 		
@@ -47,7 +47,7 @@ public ArrayList getImage(){
 			try {
 				temp[i].transferTo(files);
 			} catch (Exception e) {
-				System.out.println("¾÷·Îµå ½ÇÆÐ " + e);
+				System.out.println("ï¿½ï¿½ï¿½Îµï¿½ ï¿½ï¿½ï¿½ï¿½ " + e);
 			}
 			
 			data.setSavename(newName);

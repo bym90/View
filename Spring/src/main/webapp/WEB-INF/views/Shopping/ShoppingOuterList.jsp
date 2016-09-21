@@ -101,4 +101,4 @@
 	</div>
 </div>
 
-<%@ include file="../inc/Bottom.jsp"%>
+<%@ include file="../inc/Footer.jsp"%>

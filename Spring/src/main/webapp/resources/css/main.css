@@ -148,7 +148,7 @@ body {
 
 .menu.align-right ul ul li:hover>ul {
 	left: auto;
-	right: 170px;
+	right: 140px;
 	top: 0;
 	opacity: 1;
 	padding-right: 5px;

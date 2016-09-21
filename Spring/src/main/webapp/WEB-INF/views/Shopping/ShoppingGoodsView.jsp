@@ -118,4 +118,4 @@ h4 {
 	</table>
 
 
-<%@ include file="../inc/Bottom.jsp"%>
+<%@ include file="../inc/Footer.jsp"%>
