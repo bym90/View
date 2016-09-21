@@ -6,11 +6,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<!-- Menu CSS -->
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css">
-    <link href="${pageContext.request.contextPath}/resources/css/owl.carousel.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/resources/css/owl.theme.css" rel="stylesheet">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/nav.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/owl.carousel.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/owl.theme.css">
+    
  	<!-- Bootstrap Core CSS -->
- 	<link href="${pageContext.request.contextPath}/resources/css/bootstrapTheme.css" rel="stylesheet">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap/bootstrap-theme.css">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap/bootstrap.css">
@@ -164,60 +164,63 @@ div.desc {
       });
     });
     </script>
+	
+	<div class="nav_wrapper"> 
+  <div class="spinner-master">
+    <input type="checkbox" id="spinner-form" />
+    <label for="spinner-form" class="spinner-spin">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+    </label>
+  </div>
+  <a href="#search_box" class="btn" id="search">&#9740;</a>
+  <nav id="menu" class="menu">
+    <ul class="dropdown">
+      <li><a href="#Link" title="Link">Home</a>
+	  <li><a href="#Link" title="Link">New</a>
+	  <li><a href="#Link" title="Link">Best50</a>
+      <li><a href="#Link" title="Link">Outer</a>
+        <ul >
+          <li><a href="#Link" title="Link">점퍼</a></li>
+          <li><a href="#Link" title="Link">자켓</a></li>
+		  <li><a href="#Link" title="Link">코트</a></li>
+		  <li><a href="#Link" title="Link">가디건</a></li>
+        </ul>
+      </li>
+      <li ><a href="#Link" title="Link">T-Shirts</a>
+        <ul >
+          <li><a href="#Link" title="Link">후드</a></li>
+          <li><a href="#Link" title="Link">맨투맨</a></li>
+          <li><a href="#Link" title="Link">반팔</a></li>
+		  <li><a href="#Link" title="Link">브이넥/유넥</a></li>	
+        </ul>
+      </li>
+      <li ><a href="#Link" title="Link">Shirts</a>
+        <ul >
+          <li ><a href="#Link" title="Link">베이직</a></li>
+          <li ><a href="#Link" title="Link">스트라이프</a></li>
+          <li ><a href="#Link" title="Link">7부/롤업</a></li>
+          <li ><a href="#Link" title=" Link">체크/패턴</a></li>
+        </ul>
+      </li>
+      <li ><a href="#Link" title="Link">Pants</a>
+        <ul >
+          <li ><a href="#Link" title="Link">청바지</a></li>
+          <li ><a href="#Link" title="Link">슬림/일자</a></li>
+          <li ><a href="#Link" title="Link">슬랙스</a></li>
+        </ul>
+      </li>
+      <li ><a href="#Link" title="Link">FAQ</a></li>
+    </ul>
+	  </nav>
+	  <form class="search_box" id="search_box" action="/search/">
+	    <input name="search_criteria" placeholder="Search" value="" type="text">
+	    <input class="search_icon" value="Search" type="submit">
+	  </form>
+	</div>
 
-
-	<div class="menu align-center">
-			<ul>
-				<li>
-					<a href='#'>Home</a>
-				</li>
-				<li class='active sub'>
-					<a href='#'>Clothes</a>
-					<ul>
-						<li class='sub'>
-							<a href='#'>Top</a>
-							<ul>
-								<li>
-									<a href='#'>Outer</a>
-								</li>
-								<li>
-									<a href='#'>Shirts</a>
-								</li>
-								<li class='last'>
-									<a href='#'>T-Shirts</a>
-								</li>
-							</ul>
-						</li>
-						<li class='sub'>
-							<a href='#'>Bottom</a>
-							<ul>
-								<li>
-									<a href='#'>Jean</a>
-								</li>
-								<li>
-									<a href='#'>Slacks</a>
-								</li>
-								<li class='last'>
-									<a href='#'>Shorts</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href='#'>Order</a>
-				</li>
-				<li>
-					<a href='#'>Cart</a>
-				</li>
-				<li>
-					<a href='#'>My Page</a>
-				</li>
-				<li>
-					<a href='#'>고객센터</a>
-				</li>
-				<li class='last'>
-					<a href='#'>Administrator</a>
-				</li>
-			</ul>
-		</div><br><br><br>
+		<script src="../resources/js/jquery/nav.js"></script>
+			
+	
+	<br><br><br>
