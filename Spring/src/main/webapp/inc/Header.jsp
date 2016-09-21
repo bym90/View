@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="./resources/css/bootstrap/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="./resources/css/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./resources/css/bootstrap/bootstrap.min.css">
-
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/Shopping.css">
 	<!-- Bootstrap Core JavaScript -->
 	<script src="./resources/js/bootstrap/bootstrap.min.js"></script>
 	<script src="./resources/js/bootstrap/bootstrap.js"></script>

@@ -19,7 +19,7 @@ public class ShoppingmallController {
 	
 	
 	/*
-	 * °ü¸®ÀÚ ¸ŞÀÎ
+	 * ê´€ë¦¬ì
 	 */
 	@RequestMapping("/Admin/ShoppingAdmin")
 	public ModelAndView ShoppingAdmin(){
@@ -30,7 +30,7 @@ public class ShoppingmallController {
 	}
 	
 	/*
-	 * º£³Ê µî·Ï
+	 * ê´€ë¦¬ì ë² ë„ˆ ë“±ë¡
 	 */
 	@RequestMapping("/Admin/AdminProc")
 	public ModelAndView AdminProc(ImageData data){
@@ -44,7 +44,7 @@ public class ShoppingmallController {
 	
 	
 	/*
-	 * ¼îÇÎ¸ô ¸ŞÀÎ
+	 * ë©”ì¸
 	 */
 	@RequestMapping("/Shopping/Shopping")
 	public ModelAndView BoardMain(){
@@ -65,4 +65,27 @@ public class ShoppingmallController {
 		return mv;
 	}
 	
+	/*
+	 * ì œí’ˆ ìƒì„¸ë³´ê¸°
+	 */
+	@RequestMapping("/Shopping/ShoppingGoodsView")
+	public ModelAndView ShoppingGoodsView(){
+		
+		
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("Shopping/ShoppingGoodsView");
+		return mv;
+	}
+	
+	/*
+	 *	ìƒì˜ ëª©ë¡
+	 */
+	@RequestMapping("Shopping/ShoppingOuterList")
+	public ModelAndView OutperList(){
+	
+		
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("Shopping/ShoppingOuterList");
+		return mv;
+	}
 }
