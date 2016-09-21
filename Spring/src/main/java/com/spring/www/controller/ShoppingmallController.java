@@ -17,10 +17,6 @@ public class ShoppingmallController {
 	@Autowired
 	private ShoppingService sService;
 	
-	
-	/*
-	 * 관리자 메인
-	 */
 	@RequestMapping("/Admin/ShoppingAdmin")
 	public ModelAndView ShoppingAdmin(){
 		
@@ -29,9 +25,7 @@ public class ShoppingmallController {
 		return mv;
 	}
 	
-	/*
-	 * 베너 등록
-	 */
+	
 	@RequestMapping("/Admin/AdminProc")
 	public ModelAndView AdminProc(ImageData data){
 						
@@ -43,9 +37,7 @@ public class ShoppingmallController {
 	}
 	
 	
-	/*
-	 * 쇼핑몰 메인
-	 */
+	
 	@RequestMapping("/Shopping/Shopping")
 	public ModelAndView BoardMain(){
 		ModelAndView mv = new ModelAndView();
@@ -65,4 +57,24 @@ public class ShoppingmallController {
 		return mv;
 	}
 	
+
+	@RequestMapping("/Shopping/ShoppingGoodsView")
+	public ModelAndView ShoppingGoodsView(){
+		
+		
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("Shopping/ShoppingGoodsView");
+		return mv;
+	}
+	
+	
+	@RequestMapping("Shopping/ShoppingOuterList")
+	public ModelAndView OutperList(){
+	
+		
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("Shopping/ShoppingOuterList");
+		return mv;
+	}
+
 }

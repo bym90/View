@@ -42,6 +42,8 @@
 	
 	
 	<!-- DAO 등록 -->
+
+	
 	<bean id = "Image" class = "com.spring.dao.ShoppingDAO">
 		<property name ="sqlSessionTemplate" ref = "sqlSession"/> 
 	</bean>
