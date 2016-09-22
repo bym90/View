@@ -2,14 +2,35 @@
 
 table{
 
-	width : 800px;
+	width : 80%;
 	margin : auto;
+}
+
+.Container table>tr>td {
+	
+	height : 60px;
 }
 
 .Container {
 	
-		margin-top : 30px;
-		margin-left : 10%;
-		margin-right : 10%;
+		margin-top : 7%;
+		margin-left : 5%;
+		margin-right : 5%;
 	
 }
+
+
+.applyBtn {
+    background-color: #555555; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 2px 1px;
+    cursor: pointer;
+}
+
+
+.Btn1 {padding: 7px 15px;border-radius: 30px;}
